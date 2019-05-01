@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta http-equiv="Content type" content="text/html: ">
+        <link rel="stylesheet" href="styles.css">
+        <title>attandence management system</title>
+        <style>
+            .ab{
+              padding: 10px;
+            height: 45px;
+            width: 240px;
+            }
+            .bc{
+            padding: 10px 170px;
+            }
+            .a11{
+              padding: 5px;
+              border-radius: 20px;
+            }
+            .a12{
+              padding: 10px;
+                margin: 0 auto 0 auto;
+                display: table;
+                height: 550px;
+                /*position: relative;*/
+                overflow: hidden;
+                width: 700px;
+                background-image:url("form.jpg");
+                background-repeat: repeat-x;
+                background-size: contain;
+                
+            }
+            input[type=submit]
+            {
+                padding:10px 215px;
+                font-weight: bold;
+                background-color: 00ffff;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            select, input{
+                /*background-color: lightgray;*/
+            }
+            #bc{
+              height: 43px;
+              width: 480px;
+              padding: 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <div align="center" class="a12">
+       <h2><p><font color="white">Please Enter Your Details</font></p></h2>
+        <p><font color="white">Fill the appication form below and submit.</font></p>
+        <br>
+        <form action="studentreg.php" method="post">
+            <div align="left" style="float: left"><br>
+              <font color="white">
+                Admission No.* <br><br><br>
+                Roll No.* <br><br><br>  
+                Name* <br><br><br>  
+                Father's Name* <br><br><br>  
+                Batch*<br><br><br>
+                Phone Number*<br><br><br>
+                Gender*<br><br><br>
+              </font>
+            </div>
+            <div align="left" style="float: right">
+            <input type="text" placeholder="adminssion number" required id="bc" name="admno"><br><br>
+            <input type="number" placeholder="roll no."  id="bc"  required name="rollno"><br><br>
+            <input type="text" placeholder="full name"  id="bc"  required name="name"><br><br>
+            <input type="text" placeholder="father's name"  id="bc"  required name="fname"><br><br>    
+            <input type="text" placeholder="batch"  id="bc"  required name="batch"><br><br>    
+            <input placeholder="Phone number" type="tel" id="bc" required name="number"> <br><br>
+            <select class="a11" style="width:485px; height:35px" required name="gender">
+                <option disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <input type="submit" name="submit" value="submit">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

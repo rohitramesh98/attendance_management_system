@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta http-equiv="Content type" content="text/html: ">
+        <link rel="stylesheet" href="styles.css">
+        <title>attandence management system</title>
+        <style>
+            
+            .bc{
+            padding: 10px 170px;
+            }
+            .a12{
+              padding: 10px;
+                margin: 8% auto 50%; 
+                display: table;
+                height: 250px;
+                /*position: relative;*/
+                overflow: hidden;
+                width: 700px;
+                background-image:url("form.jpg");
+                background-repeat: repeat-x;
+                background-size: contain;
+                
+            }
+            input[type=submit]
+            {
+                padding:10px 215px;
+                font-weight: bold;
+                background-color: 00ffff;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            select, input{
+                /*background-color: lightgray;*/
+            }
+            #bc{
+              height: 43px;
+              width: 480px;
+              padding: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <div align="center" class="a12">
+       <h2><p><font color="white">Attendance Details...</font></p></h2>
+        <p><font color="white">Please Enter Your Details</font></p>
+        <br>
+        <form action="studview.php" method="post">
+            <div align="left" style="float: left"><br>
+              <font color="white">
+                ADMISSION NUMBER* <br><br><br>
+                PASSWORD* <br><br><br>  
+              </font>
+            </div>
+            <div align="left" style="float: right">
+            <input type="text" placeholder="admission number" required id="bc" name="admno"><br><br>
+            <input type="password" placeholder="password" required id="bc" name="password"><br><br>    
+            <input type="submit" name="login" value="login">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
